@@ -1,0 +1,289 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* ====== LAYOUT CHUNG ====== */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 240px;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 22px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background: #57578b;
+  color: #fff;
+}
+
+/* ====== MAIN CONTENT ====== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== HEADER ====== */
+.header {
+  background: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 22px;
+}
+
+.admin-info {
+  font-size: 16px;
+}
+
+/* ====== DASHBOARD ====== */
+.dashboard {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #2b2b6b;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  margin-top: auto;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* ====== QUẢN LÝ SẢN PHẨM ====== */
+section {
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.col3, .col9 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.col3 {
+  flex: 1;
+}
+
+.col9 {
+  flex: 3;
+}
+
+/* ====== FORM ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="file"]:focus {
+  border-color: #57578b;
+}
+
+form input[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2b2b6b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: #1e1e2f;
+}
+
+/* ====== BẢNG DANH SÁCH ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background: #2b2b6b;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ====== ICONS ====== */
+.action-icons a {
+  color: #555;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.action-icons a.edit {
+  color: #2196f3;
+}
+
+.action-icons a.delete {
+  color: #f44336;
+}
+
+.action-icons a:hover {
+  opacity: 0.8;
+}
+
+
+/* update product - update category- cập nhập sản phẩm*/
+
+.container2 {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 15px 20px;          /* Giảm padding để form gọn hơn */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Form bố cục gọn hơn */
+.container2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;                    /* Giảm khoảng cách giữa label, input, button */
+}
+
+/* Label và input */
+.container2 label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;          /* Gần hơn với input */
+}
+
+.container2 input[type="text"] {
+  padding: 6px 8px;            /* Giảm padding để input thấp hơn */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.container2 input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Nút cập nhật */
+.container2 input[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;           /* Giảm chiều cao nút */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 600;
+  width: fit-content;
+  align-self: flex-end;
+  margin-top: 6px;             /* Giữ khoảng cách nhẹ giữa input và nút */
+}
+
+.container2 input[type="submit"]:hover {
+  background: #0056b3;
+}

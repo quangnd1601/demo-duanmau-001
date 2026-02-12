@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập - Online Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Online Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="product.html">Sản phẩm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+      </nav>
+      <div class="auth">
+        <a href="login.html">Đăng nhập</a>
+        <a href="register.html">Đăng ký</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <h2>Đăng nhập</h2>
+        <form action="dashboard.html" method="POST">
+          <label for="username">Tên đăng nhập:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Mật khẩu:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Đăng nhập</button>
+        </form>
+        <p>
+          <a href="forgot-password.html">Quên mật khẩu</a> hoặc
+          <a href="register.html">chưa có tài khoản</a>?
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

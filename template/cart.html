@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng - Online Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Online Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="product.html">Sản phẩm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+      </nav>
+      <div class="auth">
+        <a href="login.html">Đăng nhập</a>
+        <a href="register.html">Đăng ký</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="cart-container">
+        <h2>Giỏ hàng của bạn</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Giá</th>
+              <th>Tổng</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sản phẩm 1</td>
+              <td>1</td>
+              <td>200,000 VNĐ</td>
+              <td>200,000 VNĐ</td>
+              <td><button class="remove">Xóa</button></td>
+            </tr>
+            <tr>
+              <td>Sản phẩm 2</td>
+              <td>2</td>
+              <td>300,000 VNĐ</td>
+              <td>600,000 VNĐ</td>
+              <td><button class="remove">Xóa</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Tổng tiền: 800,000 VNĐ</strong></p>
+        <a href="checkout.html">Thanh toán</a>
+        <button class="checkout">Thanh toán</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
